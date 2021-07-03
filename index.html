@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Neste exercício as imagens adaptam
+        -se ao tamanho do navegador. Se 
+        for maior aparece a magem Grande, se fo
+        r médio aparece a magem Média e se for 
+        pequeno aparece a imagem Pequena</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/imagemP.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/imagemM.png" type="image/png">
+        <img src="imagens/imagemG.png" alt="imagem alternativa">
+    </picture>
+</body>
+</html>
